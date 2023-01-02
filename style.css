@@ -1,0 +1,122 @@
+:root {
+    --color: white;
+    --font-_size_header: 0.85rem;
+    --font_size_other: 1rem;
+    --bg: #051037;
+    --bg_form: #141E40;
+    --account_Btn_Bg: #3ea;
+}
+
+html, body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+}
+
+.picture > img {
+    height: 100vh;
+}
+
+.picHeader * {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 30rem;
+    color: red;
+}
+
+.picHeader h3:only-of-type {
+    bottom: 7.5rem;
+    color: green;
+}
+
+.mainConteiner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+.mainText {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    font-size: var(--font-_size_header);
+}
+
+.formConteiner {
+    position: relative;
+    bottom: 1rem;
+    padding: 2rem;
+    background-color: var(--bg_form);
+    color: green;
+    box-shadow: 3px 6px 10px grey;
+}
+
+.formConteiner > h1 {
+    position: relative;
+    bottom: 1.5rem;
+    color: red;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+}
+
+input {
+    margin: 10px;
+    position: relative;
+    right: 11rem;
+    width: 16em;
+    height: 1.2rem;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+label {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 1rem;
+    font-weight: bolder;
+}
+
+.accountBtn {
+    height: 2.8rem;
+    width: 12.5rem;
+    border-style: none;
+    text-align: center;
+    font-weight: bolder;
+    box-shadow: 3px 4px 10px rgba(211, 111, 211, 0.5);
+    font-size: var(--font_size_other);
+    border-radius: 0.5rem;
+    color: var(--bg_form);
+    background-color: var(--account_Btn_Bg);
+    cursor: pointer;
+    position: relative;
+    right: 20rem;
+}
+
+.accountBtn:hover {
+    color: red;
+}
+
+* .logInDiv {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 18rem;
+}
+
+.logInDiv h3 {
+    padding-right: 0.5rem;
+    position: relative;
+}
