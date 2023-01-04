@@ -2,9 +2,10 @@
     --color: white;
     --font-_size_header: 0.85rem;
     --font_size_other: 1rem;
-    --bg: #051037;
-    --bg_form: #141E40;
-    --account_Btn_Bg: #3ea;
+    --bg: #1B0040;
+    --bg_form: #290060;
+    --account_Btn_Bg: #DF0083;
+    --Btn_Hover: #BF0071;
 }
 
 html, body {
@@ -17,20 +18,44 @@ html, body {
 }
 
 .picture > img {
+    display: flex;
+    justify-content: center;
     height: 100vh;
 }
 
-.picHeader * {
-    display: flex;
-    justify-content: center;
+.picHeader {
     position: relative;
-    bottom: 30rem;
+    bottom: 3rem;
     color: red;
 }
 
-.picHeader h3:only-of-type {
-    bottom: 7.5rem;
-    color: green;
+.picHeader, .credit + a {
+    position: relative;
+    left: 5.6em;
+}
+
+.credit, .creditsLink {
+    color: white;
+    font-size: 1rem;
+}
+
+.logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    position: absolute;
+    width: 30.5rem;
+    height: 10em;
+    bottom: 25.5rem;
+    right: 5.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logoText {
+    color:var(--account_Btn_Bg);
+    font-size: 4rem;
 }
 
 .mainConteiner {
@@ -52,14 +77,13 @@ html, body {
     bottom: 1rem;
     padding: 2rem;
     background-color: var(--bg_form);
-    color: green;
-    box-shadow: 3px 6px 10px grey;
+    box-shadow: 1px 5px 10px rgba(211, 111, 211, 0.4);
 }
 
 .formConteiner > h1 {
     position: relative;
     bottom: 1.5rem;
-    color: red;
+    color: rgba(211, 111, 211, 1);
 }
 
 form {
@@ -76,13 +100,18 @@ input {
     width: 16em;
     height: 1.2rem;
     outline: none;
+    border-radius: 0.5rem;
+    border: 1.5px solid black;
 }
 
 input:focus {
-    border: 2px solid blue;
+    border: 1.5px solid rgba(211, 111, 211, 1);
+    box-shadow: 3px 3px 4px rgba(130, 130, 130, 0.5);
 }
 
 label {
+    color: rgba(211, 111, 211, 1);
+    font-style: italic;
     font-size: 1.2rem;
     position: relative;
     bottom: 1rem;
@@ -98,7 +127,6 @@ label {
     box-shadow: 3px 4px 10px rgba(211, 111, 211, 0.5);
     font-size: var(--font_size_other);
     border-radius: 0.5rem;
-    color: var(--bg_form);
     background-color: var(--account_Btn_Bg);
     cursor: pointer;
     position: relative;
@@ -106,7 +134,7 @@ label {
 }
 
 .accountBtn:hover {
-    color: red;
+    background-color: var(--Btn_Hover);
 }
 
 * .logInDiv {
@@ -119,4 +147,9 @@ label {
 .logInDiv h3 {
     padding-right: 0.5rem;
     position: relative;
+}
+
+.logInDiv a {
+    color:rgba(211, 111, 211, 1);
+    text-decoration: none;
 }

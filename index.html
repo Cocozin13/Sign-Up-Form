@@ -12,9 +12,10 @@
         <div class="picture">
             <img src="./leftImage.jpg" alt="Purple Flowers"></img>
             <div class="picHeader">
-                <img class="logo" src="" alt=""></img>
-                <h1 class="logoText">Lorem Ipsum</h1>
-                <h3 class="credit">Photo by <a href="https://unsplash.com/@eugene_golovesov">Eugene Golovesov</a> on <a href="https://unsplash.com/">Unsplash</a></h3>
+                <div class="logoDiv">
+                    <h1 class="logoText">ODIN</h1>
+                </div>
+                <h3 class="credit">Photo by <a class="creditsLink" href="https://unsplash.com/@eugene_golovesov">Eugene Golovesov</a> on <a class="creditsLink" href="https://unsplash.com/">Unsplash</a></h3>
             </div>
         </div>
         <div class="mainConteiner">
@@ -27,27 +28,27 @@
             </div>        
             <div class="formConteiner">
                 <h1>Let's do this!</h1>
-                <form action="#">
-                    <label for="first_name">First Name</label>
-                    <input type="text" name="first_name" id="first_name"></input>
+                <form id="my-form" action="#">
+                    <label for="first_name">*First Name</label>
+                    <input type="text" name="first_name" id="first_name" required></input>
 
                     <label for="last_name">Last Name</label>
                     <input type="text" name="last_name" id="last_name"></input>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email"></input>
+                    <label for="email">*Email</label>
+                    <input type="email" name="email" id="email" required></input>
 
                     <label for="phone_number">Phone Number</label>
                     <input type="text" name="phone_number" id="phone_number"></input>
 
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" class="error"></input>
+                    <label for="password">*Password</label>
+                    <input type="password" name="password" id="password" class="error" required></input>
 
-                    <label for="password_confirm">Confirm Password</label>
-                    <input type="password" name="password_confirm" id="password_confirm" class="error"></input>
+                    <label for="password_confirm">*Confirm Password</label>
+                    <input type="password" name="password_confirm" id="password_confirm" class="error" required></input>
                 </form>
             </div>
-            <button class="accountBtn" type="button">Create Account</button>
+            <button class="accountBtn" type="submit" form="my-form">Create Account</button>
             <div class="logInDiv">
                 <h3>Already have an account?</h3><b><a href="">Log In</a></b>
             </div>
